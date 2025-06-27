@@ -1,0 +1,22 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.nav-buttons .btn {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.card-text {
+    color: #555;
+}

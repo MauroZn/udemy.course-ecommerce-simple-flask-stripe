@@ -1,0 +1,15 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+    {{ form.email.label }} {{ form.email() }}
+    {{ form.password.label }} {{ form.password() }}
+    {{ form.confirm_password.label }} {{ form.confirm_password() }}
+    {{ form.submit() }}
+</form>
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    {% for category, message in messages %}
+      <div class="alert alert-{{ category }}">{{ message }}</div>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
